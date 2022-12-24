@@ -1,9 +1,9 @@
 .modal-container{
-    position: relative;
+    position: absolute;
     min-width: 100vw;
     min-height: 100vh;
     transition: all ease 300ms;
-    background: transparent;
+    background: white;
 }
 
 .content{
@@ -14,7 +14,30 @@
     top: 30%;
     left: 33%;
     backdrop-filter: blur(10px);
+    animation: easein 1s ease-in;
+    animation: easeout 1s ease-out;
+    /* opacity: 0; */
 }
+
+/* ease in */
+@keyframes easein {
+    0% {
+        opacity: 0;
+    } 
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ease out */
+/* @keyframes easeout{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
 
 .info-text{
     padding: 1.5rem;
